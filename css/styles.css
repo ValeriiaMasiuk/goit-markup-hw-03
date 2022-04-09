@@ -1,0 +1,399 @@
+:root {
+  --logo-color: #000000;
+  --main-text-color: #212121;
+  --text-color: #757575;
+  --accent-text-color: #2196f3;
+  --secondary-color: #ffffff;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --button-background-color: #f5f4fa;
+  --main-bg-color: #2F303A;
+}
+
+body {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1203px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header */
+ 
+.header {
+  border-width: 1600px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.logo-part {
+  color: var(--accent-text-color);
+}
+
+.main-nav {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-text-color);
+}
+
+.address-nav {
+  display: flex;
+  margin-left: auto;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.address-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-address {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header-address:hover,
+.header-address:focus {
+  color: var(--accent-text-color);
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--main-bg-color);
+}
+
+.hero-header {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  }
+
+.hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  
+  color: var(--secondary-color);
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Features */
+
+.features .title {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-details {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.feature-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Activities */
+
+.activities .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.activity-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Team */
+
+.team {
+  background-color: #F5F4FA;
+}
+
+.team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.team-list .item {
+  width: 270px;
+  margin-bottom: 0;
+
+  background-color: var(--secondary-color);
+}
+
+.team-list .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-member {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team-job {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--main-bg-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--secondary-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.footer .list {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.footer-address {
+  color: var(--secondary-color); 
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-text-color);
+}
+
+.footer .link {
+  color: var(--footer-links-color);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Filter buttons */
+
+.filter {
+  display: flex;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 34px;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button {
+  display: inline-block;
+  min-width: none;
+  padding: 6px 22px;
+
+  color: var(--main-text-color);
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-text-color);
+}
+
+/* Examples of projects */
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.examples .card {
+  width: calc((100% - 60px) /3 );
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+.examples .card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.examples .card:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+.example-type {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: left;
+}
+
+.example-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
