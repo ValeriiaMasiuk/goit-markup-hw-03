@@ -7,6 +7,7 @@
   --footer-links-color: rgba(255, 255, 255, 0.6);
   --button-background-color: #f5f4fa;
   --main-bg-color: #2F303A;
+  --border-card-color: #EEEEEE;
 }
 
 body {
@@ -15,6 +16,18 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -26,8 +39,15 @@ h2 {
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -168,8 +188,8 @@ a {
 
 .features .title {
   font-weight: 700;
-  margin-top: 0;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .feature-details {
@@ -183,9 +203,6 @@ a {
 
 .feature-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .feature-list .item {
@@ -196,18 +213,15 @@ a {
   margin-right: 30px;
 }
 
+
 /* Activities */
 
 .activities .title {
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
 .activity-list {
   display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .activity-list .item:not(:last-child) {
@@ -221,15 +235,11 @@ a {
 }
 
 .team .title {
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
 .team-list {
   display: flex;
-  margin-top: 0;
-  padding-left: 0;
-  margin-bottom: 0;
 }
 
 .team-list .item {
@@ -244,7 +254,7 @@ a {
 }
 
 .team-member {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -280,11 +290,6 @@ a {
   font-size: 26px;
 }
 
-.footer .list {
-  margin-top: 0;
-  padding-left: 0;
-}
-
 .footer-address {
   color: var(--secondary-color); 
   font-weight: 400;
@@ -295,6 +300,10 @@ a {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-text-color);
+}
+
+.footer .list li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer .link {
@@ -314,9 +323,7 @@ a {
 .filter {
   display: flex;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 34px;
-  padding-left: 0;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -351,10 +358,6 @@ a {
 .examples {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .examples .card {
@@ -363,7 +366,6 @@ a {
   margin-bottom: 30px;
   margin-left: 0;
 
-  border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
 
@@ -386,8 +388,15 @@ a {
   text-align: left;
 }
 
+.card-name {
+  border-left: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
+  border-bottom: 1px solid var(--border-card-color);
+
+  padding: 20px 24px;
+}
+
 .example-title {
-  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--main-text-color);
